@@ -1,0 +1,462 @@
+{
+  "info": {
+    "_postman_id": "86e4e65a-5056-4ade-b5c6-6edba04f1769",
+    "name": "HawkSearch QuickStart Collection TEST Environment",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53561173",
+    "_collection_link": "https://go.postman.co/collection/53561173-86e4e65a-5056-4ade-b5c6-6edba04f1769?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Bulk Field Creation",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-HawkSearch-ApiKey",
+            "value": "{{api_key}}",
+            "description": "API Key",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n        \"Name\": \"{{name}}\",\n        \"FieldType\": \"{{fieldtype}}\",\n        \"Label\":\"{{label}}\",\n        \"Type\":\"{{type}}\",\n        \"Boost\":{{boost}},\n        \"IsPrimaryKey\": \"{{isprimarykey}}\",\n        \"IsOutput\":\"{{isoutput}}\",\n        \"IsShingle\":\"{{isshingle}}\",\n        \"IsBestFragment\":\"{{isbestfragment}}\",\n        \"IsDictionary\":\"{{isdictionary}}\",\n        \"IsSort\":\"{{issort}}\",\n        \"IsPrefix\": \"{{isprefix}}\",\n        \"IsHidden\":\"{{ishidden}}\",\n        \"IsCompare\": \"{{iscompare}}\",\n        \"IsKeywordText\":\"{{iskeywordtext}}\",\n        \"IsQuery\":\"{{isquery}}\",\n        \"IsQueryText\":\"{{isquerytext}}\",\n        \"SkipCustom\": \"{{skipcustom}}\",\n        \"StripHtml\":\"{{striphtml}}\",\n        \"PreviewMapping\":\"{{previewmapping}}\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://test.hawksearch.net/api/v10/field",
+          "protocol": "https",
+          "host": [
+            "test",
+            "hawksearch",
+            "net"
+          ],
+          "path": [
+            "api",
+            "v10",
+            "field"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Single Field",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-HawkSearch-ApiKey",
+            "value": "{{api_key}}",
+            "description": "API Key",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"Name\": \"justexample\",\n    \"FieldType\": \"keyword\",\n    \"Label\": \"price\",\n    \"Type\": \"Single\",\n    \"Boost\": 1,\n    \"IsPrimaryKey\": \"FALSE\",\n    \"IsOutput\": \"FALSE\",\n    \"IsShingle\": \"FALSE\",\n    \"IsBestFragment\": \"FALSE\",\n    \"IsDictionary\": \"FALSE\",\n    \"IsSort\": \"FALSE\",\n    \"IsPrefix\": \"FALSE\",\n    \"IsHidden\": \"FALSE\",\n    \"IsCompare\": \"FALSE\",\n    \"IsKeywordText\": \"TRUE\",\n    \"IsQuery\": \"FALSE\",\n    \"IsQueryText\": \"FALSE\",\n    \"SkipCustom\": \"FALSE\",\n    \"StripHtml\": \"FALSE\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://test.hawksearch.net/api/v10/field",
+          "protocol": "https",
+          "host": [
+            "test",
+            "hawksearch",
+            "net"
+          ],
+          "path": [
+            "api",
+            "v10",
+            "field"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Bulk Facet Creation",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-HawkSearch-ApiKey",
+            "value": "{{api_key}}",
+            "description": "API Key",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n        \"Name\": \"{{name}}\",\n        \"FacetType\": \"{{facettype}}\",\n        \"FieldType\":\"{{fieldtype}}\",\n        \"DisplayType\":\"{{displaytype}}\",\n        \"MaxCount\":{{maxcount}},\n        \"Field\":\"{{field}}\",\n        \"ExpandSelection\": \"{{expandselection}}\",\n        \"SortBy\": \"{{sortby}}\",\n        \"ShowFacetImageCount\": \"{{showfacetimagecount}}\",\n        \"IsCurrency\":\"{{iscurrency}}\",\n        \"IsNumeric\":\"{{isnumeric}}\",\n        \"IsSearch\":\"{{issearch}}\",\n        \"IsVisible\":\"{{isvisible}}\",\n        \"IsCollapsible\":\"{{iscollapsible}}\",\n        \"IsCollapsedDefault\": \"{{iscollapseddefault}}\",\n        \"MinHitCount\": {{minhitcount}},\n        \"ScrollHeight\": {{scrollheight}},\n        \"ScrollThreshold\": {{scrollthreshold}},\n        \"TruncateThreshold\": {{truncatethreshold}},\n        \"SearchThreshold\": {{searchthreshold}},\n        \"SortOrder\": {{sortorder}},\n        \"ShowSliderInputs\":\"{{showsliderinputs}}\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://test.hawksearch.net/api/v10/facet",
+          "protocol": "https",
+          "host": [
+            "test",
+            "hawksearch",
+            "net"
+          ],
+          "path": [
+            "api",
+            "v10",
+            "facet"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Single Facet",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-HawkSearch-ApiKey",
+            "value": "{{api_key}}",
+            "description": "API Key",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"Name\": \"justexample\",\n    \"FacetType\": \"checkbox\",\n    \"FieldType\": \"string\",\n    \"DisplayType\": \"scrolling\",\n    \"MaxCount\": 20,\n    \"Field\": \"category\",\n    \"ExpandSelection\": \"TRUE\",\n    \"IsCurrency\": \"FALSE\",\n    \"IsNumeric\": \"FALSE\",\n    \"IsSearch\": \"FALSE\",\n    \"IsVisible\": \"TRUE\",\n    \"IsCollapsible\": \"TRUE\",\n    \"IsCollapsedDefault\": \"FALSE\",\n    \"MinHitCount\": 0,\n    \"ScrollHeight\": 100,\n    \"ScrollThreshold\": 10,\n    \"TruncateThreshold\": 0,\n    \"SearchThreshold\": 0,\n    \"SortOrder\": 1,\n    \"ShowSliderInputs\": \"TRUE\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://test.hawksearch.net/api/v10/facet",
+          "protocol": "https",
+          "host": [
+            "test",
+            "hawksearch",
+            "net"
+          ],
+          "path": [
+            "api",
+            "v10",
+            "facet"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Index",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-HawkSearch-ApiKey",
+            "value": "{{api_key}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://indexing-test.hawksearch.net/api/v2/indexing/create",
+          "protocol": "https",
+          "host": [
+            "indexing-test",
+            "hawksearch",
+            "net"
+          ],
+          "path": [
+            "api",
+            "v2",
+            "indexing",
+            "create"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Bulk Product Creation",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-HawkSearch-ApiKey",
+            "value": "{{api_key}}",
+            "description": "API Key",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"IndexName\": \"{{index_name}}\",\n\"Items\": [{\n        \"key\": [\n            \"{{key}}\"\n        ],\n        \"name\": [\n            \"{{name}}\"\n        ],\n        \"sku\": [\n            \"{{sku}}\"\n        ],\n        \"description\": [\n            \"{{description}}\"\n        ],\n        \"imageUrl\": [\n            \"{{imageUrl}}\"\n        ],\n        \"brand\": [\n            \"{{brand}}\"\n        ],\n        \"color\": [\n            \"{{color}}\"\n        ],\n        \"price\": [\n            {{price}}\n        ],\n        \"URL\": [\n            \"{{url}}\"\n        ],\n        \"type\": [\n            \"{{type}}\"\n        ],\n        \"category\": [\n            \"{{category}}\"\n        ]\n    }]\n\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://indexing-test.hawksearch.net/api/v2/indexing/index-items",
+          "protocol": "https",
+          "host": [
+            "indexing-test",
+            "hawksearch",
+            "net"
+          ],
+          "path": [
+            "api",
+            "v2",
+            "indexing",
+            "index-items"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Single Product",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-HawkSearch-ApiKey",
+            "value": "{{api_key}}",
+            "description": "API Key",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"IndexName\": \"{{index_name}}\",\n    \"Items\": [\n        {\n            \"sku\": [\n                \"example\"\n            ],\n            \"key\": [\n            \"example\"\n            ],\n            \"title\": [\n                \"example\"\n            ],\n            \"description\": [\n                \"description will go here\"\n            ],\n            \"long_description\": [\n                \"long description will go here\"\n            ],\n            \"image_url\": [\n                \"https://example.jpg\"\n            ],\n            \"type\": [\n                \"Item\"\n            ],\n            \"color\": [\n                \"red\"\n            ],\n            \"price\": [\n                36\n            ],\n            \"page_url\": [\n                \"http://example\"\n            ],\n            \"category\": [\n                \"example\"\n            ],\n            \"brand\": [\n                \"example\"\n            ]\n        }\n    ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://indexing-test.hawksearch.net/api/v2/indexing/index-items",
+          "protocol": "https",
+          "host": [
+            "indexing-test",
+            "hawksearch",
+            "net"
+          ],
+          "path": [
+            "api",
+            "v2",
+            "indexing",
+            "index-items"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Set Current Index",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-HawkSearch-ApiKey",
+            "value": "{{api_key}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"IndexName\": \"{{index_name}}\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://indexing-test.hawksearch.net/api/v2/indexing/set-current",
+          "protocol": "https",
+          "host": [
+            "indexing-test",
+            "hawksearch",
+            "net"
+          ],
+          "path": [
+            "api",
+            "v2",
+            "indexing",
+            "set-current"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Current Index",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-HawkSearch-ApiKey",
+            "value": "{{api_key}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "https://indexing-test.hawksearch.net/api/v2/indexing/current",
+          "protocol": "https",
+          "host": [
+            "indexing-test",
+            "hawksearch",
+            "net"
+          ],
+          "path": [
+            "api",
+            "v2",
+            "indexing",
+            "current"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "View Indexes",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-HawkSearch-ApiKey",
+            "value": "{{api_key}}",
+            "type": "text"
+          },
+          {
+            "key": "",
+            "value": "",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "url": {
+          "raw": "https://indexing-test.hawksearch.net/api/v2/indexing",
+          "protocol": "https",
+          "host": [
+            "indexing-test",
+            "hawksearch",
+            "net"
+          ],
+          "path": [
+            "api",
+            "v2",
+            "indexing"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Index",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-HawkSearch-ApiKey",
+            "value": "xxxx-xxxx-xxxx-xxxx-xxxx",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"IndexName\": \"{{index_name}}\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://indexing-test.hawksearch.net/api/v2/indexing/delete-index",
+          "protocol": "https",
+          "host": [
+            "indexing-test",
+            "hawksearch",
+            "net"
+          ],
+          "path": [
+            "api",
+            "v2",
+            "indexing",
+            "delete-index"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-HawkSearch-ApiKey",
+            "value": "{{api_key}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"ClientGuid\": \"{{client_guid}}\",\r\n    \"IndexName\": \"{{index_name}}\",\r\n    \"Keyword\": \"Enter Keyword Here\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://searchapi-test.hawksearch.net/api/v2/search",
+          "protocol": "https",
+          "host": [
+            "searchapi-test",
+            "hawksearch",
+            "net"
+          ],
+          "path": [
+            "api",
+            "v2",
+            "search"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
