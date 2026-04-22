@@ -1,5 +1,5 @@
 # HawkSearch Postman Collections
-## Overview
+# Overview
 
 This repository contains a series of Postman collections for use with HawkSearch, an AI-powered site search, merchandising, and product discovery platform designed for eCommerce, B2B, and content-rich websites. Learn more about HawkSearch here: [www.hawksearch.com/](https://www.hawksearch.com/).
 
@@ -7,7 +7,7 @@ These collections have been created for use with **Postman**, a popular testing 
 
 These collections let users quickly send pre-built API requests to set up, manage, and test their search environment without writing code. More information about HawkSearch's APIs can be found here: [HawkSearch v4.0 API](https://developerdocs.hawksearch.com/docs/hawksearch-v40-api). 
 
-## Getting Started 
+# Getting Started 
 These collections are for use within a HawkSearch engine. If you do not have your own HawkSearch engine, you can set up your own via the QuickStart guide: [QuickStart: Getting Started](https://developerdocs.hawksearch.com/docs/quickstart-getting-started). 
 
 To import a collection, `clone` this repository and open Postman. Select the `Import` option. When prompted by the pop-up, drag and drop or select the cloned repository folder. If successful, the collection will appear underneath the `Collections` tab. 
@@ -20,7 +20,7 @@ The Postman collections in this repository contain the following variables. Repl
 - YOUR_INDEX_NAME / {{index_name}}
     - Returned via the `Get Current Index` or `Create Index` API call.
 
-## Available Collections
+# Available Collections
 
 - QuickStart
   - HawkSearch QuickStart 
@@ -33,11 +33,11 @@ The Postman collections in this repository contain the following variables. Repl
 - Misc.
   - HawkSearch Sample Environment
 
-# QuickStart 
+## QuickStart 
 
 Inside this section are Postman collections designed as a quick-start toolkit for setting up and testing a HawkSearch implementation. These collections guide users through the core workflow of creating fields and facets, building and managing an index, uploading product data, and executing search queries to validate the setup end-to-end. 
 
-## HawkSearch Quickstart 
+### HawkSearch Quickstart 
 This Postman collection is designed to be used in tandem with the HawkSearch QuickStart guide, linked [here](https://developerdocs.hawksearch.com/docs/for-blank-engines). This guide has step by step instructions on using these API endpoints to populate a blank HawkSearch engine. The following collection is intended to be a starting point for beginners looking to use HawkSearch, and inlcudes some of HawkSearch's most commonly used API endpoints.
 
 - **Bulk Field Creation** - Creates multiple fields. 
@@ -54,22 +54,22 @@ This Postman collection is designed to be used in tandem with the HawkSearch Qui
 - **Search** - Retrieves search results of a given keyword in the specified index. Learn [more.](https://developerdocs.hawksearch.com/docs/search-api-examples#search-v2:~:text=Search%20V2)
 
 
-# Indexing API
+## Indexing API
 
-# Search API
+## Search API
 
-# Recommendation API
+## Recommendation API
 
-# Dashboard API
+## Dashboard API
 
-# Tracking API
+## Tracking API
 
-# QA and Testing
+## QA and Testing
 
-# Misc.
+## Misc.
 
 Miscellaneous utilities for Postman.
 
-## HawkSearch Sample Environment
+### HawkSearch Sample Environment
 
 The HawkSearch Sample Environment defines a minimal configuration layer for running HawkSearch Postman collections, allowing the user to avoid manually entering values for API keys, index names, and client GUID. It is encouraged to expand upon this environment to suit your personal needs and include other variables as seen fit.
