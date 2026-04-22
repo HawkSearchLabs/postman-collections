@@ -34,18 +34,18 @@ The Postman collections contain the following variables. Replace these environme
 # QuickStart 
 
 ## HawkSearch Quickstart Collection
-- **Bulk Field Creation** - Creates multiple fields. Learn more.
-- Create Single Field - Creates a single field. Learn more.
-- Bulk Facet Creation - Creates multiple facets. Learn more.
-- Create Single Facet - Creates a single facet. Learn more.
-- Create Index - Creates a new index and returns its name. Learn [more](https://developerdocs.hawksearch.com/docs/indexing-api-examples#create:~:text=Create,-This).
-- Bulk Product Creation - Creates multiple products within a specified index. Learn more.
-- Create Single Product - Creates a single product within a specified index. Learn more.
-- Set Current Index - Sets a specific index as the active index that HawkSearch will use for search queries. Learn [more](https://developerdocs.hawksearch.com/docs/indexing-api-examples#set-current-index:~:text=Set%20Current%20Index).
-- Get Current Index - Retrieves the currently active index being used for search operations. Learn [more](https://developerdocs.hawksearch.com/docs/indexing-api-examples#get-current-index-name:~:text=Get%20Current%20Index%20Name).
-- View Indexes - Returns a list of all indexes. Each engine has a maximum of one active index and one idle index. Learn [more](https://developerdocs.hawksearch.com/docs/indexing-api-examples#get-all-indexes:~:text=Get%20All%20Indexes).
-- Delete Index - Deletes a specified index. Learn [more](https://developerdocs.hawksearch.com/docs/indexing-api-examples#delete-index:~:text=Delete%20Index,-This).
-- Search - Retrieves search results of a given keyword in the specified index. Learn [more.](https://developerdocs.hawksearch.com/docs/search-api-examples#search-v2:~:text=Search%20V2)
+- **Bulk Field Creation** - Creates multiple fields. 
+- **Create Single Field** - Creates a single field. 
+- **Bulk Facet Creation** - Creates multiple facets. 
+- **Create Single Facet** - Creates a single facet.
+- **Create Index** - Creates a new index and returns its name. Learn [more](https://developerdocs.hawksearch.com/docs/indexing-api-examples#create:~:text=Create,-This).
+- **Bulk Product Creation** - Creates multiple products within a specified index.
+- **Create Single Product** - Creates a single product within a specified index.
+- **Set Current Index** - Sets a specific index as the active index that HawkSearch will use for search queries. Learn [more](https://developerdocs.hawksearch.com/docs/indexing-api-examples#set-current-index:~:text=Set%20Current%20Index).
+- **Get Current Index** - Retrieves the currently active index being used for search operations. Learn [more](https://developerdocs.hawksearch.com/docs/indexing-api-examples#get-current-index-name:~:text=Get%20Current%20Index%20Name).
+- **View Indexes** - Returns a list of all indexes. Each engine has a maximum of one active index and one idle index. Learn [more](https://developerdocs.hawksearch.com/docs/indexing-api-examples#get-all-indexes:~:text=Get%20All%20Indexes).
+- **Delete Index** - Deletes a specified index. Learn [more](https://developerdocs.hawksearch.com/docs/indexing-api-examples#delete-index:~:text=Delete%20Index,-This).
+- **Search** - Retrieves search results of a given keyword in the specified index. Learn [more.](https://developerdocs.hawksearch.com/docs/search-api-examples#search-v2:~:text=Search%20V2)
 
 
 
