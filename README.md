@@ -38,7 +38,7 @@ The Postman collections in this repository contain the following variables. Repl
 Inside this section are Postman collections designed as a quick-start toolkit for setting up and testing a HawkSearch implementation. These collections guide users through the core workflow of creating fields and facets, building and managing an index, uploading product data, and executing search queries to validate the setup end-to-end. 
 
 ### [HawkSearch QuickStart](<HawkSearch QuickStart.postman_collection>) 
-This Postman collection is designed to be used in tandem with the HawkSearch QuickStart guide, linked [here](https://developerdocs.hawksearch.com/docs/for-blank-engines). This guide has step by step instructions on using these API endpoints to populate a blank HawkSearch engine. The following collection is intended to be a starting point for beginners looking to use HawkSearch, and inlcudes some of HawkSearch's most commonly used API endpoints.
+This Postman collection is designed to be used in tandem with the HawkSearch QuickStart guide, linked [here](https://developerdocs.hawksearch.com/docs/for-blank-engines). This guide has step by step instructions on using these API endpoints to populate a blank HawkSearch engine. The following collection is intended to be a starting point for beginners looking to use HawkSearch, and includes some of HawkSearch's most commonly used API endpoints.
 
 - **Bulk Field Creation** - Creates multiple fields. 
 - **Create Single Field** - Creates a single field. 
