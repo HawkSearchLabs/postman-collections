@@ -1,0 +1,6 @@
+# GitHub + Stripe Test Keys (FAKE - For Gitleaks Testing Only)
+GITHUB_TOKEN=ghp_aBcDeFgHiJkLmNoPqRsTuVwXyZ123456
+GITHUB_OAUTH=gho_16C7e42F292c6912E7710c838347Ae178B4a
+
+STRIPE_SECRET_KEY=sk_live_51ABCDEfghijklmnopqrstuvwx
+STRIPE_PUBLISHABLE_KEY=pk_live_51ABCDEfghijklmnopqrstuvwx

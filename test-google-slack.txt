@@ -1,0 +1,6 @@
+# Google + Slack Test Keys (FAKE - For Gitleaks Testing Only)
+GOOGLE_API_KEY=AIzaSyD-9tSrke72I6e67BU5Q6YnD1234567890
+GOOGLE_OAUTH_CLIENT_SECRET=GOCSPX-abcdefghijklmnopqrstuvwxyz12
+
+SLACK_BOT_TOKEN=xoxb-123456789012-1234567890123-abcdefghijklmnopqrstuvwx
+SLACK_WEBHOOK_URL=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX
